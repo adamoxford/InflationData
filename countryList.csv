@@ -1,4 +1,4 @@
-Region/Country,Geography,Name,Link,Notes,Social media,Breakdown by COICOP category?
+Region.Country,Geography,Name,Link,Notes,Social.media,Breakdown.by.COICOP.category.
 Global,Global,World Bank Data Portal,https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG,Annual updates only,,N
 Africa,Global,Africa Development Bank/Open Data for Africa,opendataforafrica.org,Not  regularly updated,,
 Global,Global,International Monetary Fund,https://data.imf.org/?sk=4FFB52B2-3653-409A-B471-D47B46D904B5,Data doesn't exactly match national level reports,,Y
@@ -23,13 +23,13 @@ Equatorial Guinea,GNQ,,,,,
 Eritrea,ERI,,,,,
 eSwatini,SWZ,Central Bank,https://www.centralbank.org.sz/,Not included in monthly PDF every month,,
 Ethiopia,ETH,Ethiopia Statistics Service,https://www.statsethiopia.gov.et/our-survey-reports/,Monthly PDF report,https://www.statsethiopia.gov.et/our-survey-reports/,Y
-Gabon,GAB,Direction Générale des Statistiques du Gabon,https://statgabon.ga/home/,Monthly PDF report,,Y
+Gabon,GAB,Direction Générale des Statistiques du Gabon,https://statgabon.ga/home/,Monthly PDF report (Website down?),,Y
 Gambia,GMB,The Gambia Bureau of Statistics,https://www.gbosdata.org/downloads,Monthly XLS sheet,,Y
 Ghana,GHA,Ghana Statistical Service,https://statsghana.gov.gh/nationalaccount_macros.php?Stats=MTE2MTIyMjQ5Ni41NjY=/webstats/7163p83s71,Monthly bulletin,,Y
 Guinea,GIN,Institut National de la Statistique,https://www.stat-guinee.org/,Monthly PDF,,Y
 Guinea-Bissau,GNB,,,,,
 Ivory Coast,CIV,Institut National de la Statistique,http://www.ins.ci/,Monthly PDF,,Y
-Kenya,KEN,Kenya National Bureau of Statistics,https://www.knbs.or.ke/consumer-price-indice/,Monthly PDF,https://twitter.com/KNBStats,Y
+Kenya,KEN,Kenya National Bureau of Statistics,https://www.knbs.or.ke/news-and-events/,"Monthly PDF, potential malware on site?",https://twitter.com/KNBStats,Y
 Lesotho,LSO,Lesotho Bureau of Statistics,https://www.bos.gov.ls/Publications.htm,Monthly PDF,,Y
 Liberia,LBR,,,,,
 Libya,LBY,Bureau of Statistics and Census Libya,http://bsc.ly/?P=5&sec_Id=11&dep_Id=4#178,Monthly RAR file,,
@@ -40,7 +40,7 @@ Mauritania,MRT,ANSADE,https://ansade.mr/fr/publications/?row=INPC,Monthly PDF,,Y
 Mauritius,MUS,Statistics Mauritius,https://statsmauritius.govmu.org/Pages/Statistics/By_Subject/CPI/SB_CPI.aspx,Monthly PDF,,Y
 Morocco,MAR,Haut-Commissariat au Plan,https://applications-web.hcp.ma/sip/,Interactive & Press release,,Y
 Mozambique,MOZ,Insituto Nacional de Estatistica,http://www.ine.gov.mz/estatisticas/estatisticas-economicas/indice-de-preco-no-consumidor/notas-de-imprensa/mocambique,Monthly PDF,http://twitter.com/INE_mz,Y
-Namibia,NAM,Namibia Statistics Agency,https://nsa.org.na/page/publications/,Monthly XLSX sheet (Price Statistics),,Y
+Namibia,"NAM",Namibia Statistics Agency,https://nsa.org.na/page/publications/,Monthly XLSX sheet (Price Statistics),,Y
 Niger,NER,Institut National de la Statistique du Niger,https://www.stat-niger.org/?page_id=1558,No 2022 updates yet,,Y
 Nigeria,NGA,Central Bank of Nigeria,https://www.cbn.gov.ng/rates/inflrates.asp,Interactive and XLSX update,,Y
 Rwanda,RWA,National Institute of Statistics of Rwanda,https://www.statistics.gov.rw/publication/consumer-price-index,Monthly PDF and XLSX updates,,Y

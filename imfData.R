@@ -19,7 +19,7 @@ africaData <- countryList %>%
                     inner_join(countryCodes, by = c("Geography" = "ISO.Code")) %>%
                     inner_join(imfData, by = c("IMF.Code" = "Country.Code")) %>%
                     filter(Attribute == "Value", grepl("Percentage change, Previous year", Indicator.Name)) %>%
-                    select(-c("Common.Reference.Period", "X", "Country.Name")) %>%
+                    select(-c("Common.Reference.Period", "X", "Country.Name", "IMF.Code")) %>%
                     mutate(across(starts_with("X"), as.numeric)) %>%
                     mutate(across(starts_with("X"), round, 2))
 

@@ -12,13 +12,10 @@ library(dplyr)
 
 imfData <- read.csv("imfData.csv")
 
-<<<<<<< HEAD
 #Kenya's data is a manual PDF scrape at the moment, updated on a Google Sheet in the ADH drive
 
 kenyaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=0&single=true&output=csv")
 
-=======
->>>>>>> b0929f6d0f91521c2a306c762049342a2c2568a5
 #get the latest country data from Google Sheet
 countryList <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vR6_bOjxa_F2qgn5eOGo6gpOLXKY9WcsebCvTPD4xVVs2yIL0ABtQx3QKhxfaftTI4jVj85mwaQQ0_K/pub?gid=0&single=true&output=csv")
 write_csv(countryList, "countryList.csv")

@@ -48,3 +48,10 @@ names(africaData)[-c(1:4)] <- dates
 
 
 write_csv(africaData, "africaInflationData.csv")
+
+
+africaData2 <- africaData %>% select(-c("Geography")) %>%
+                              pivot_longer(cols = starts_with("2"), names_to = "Year.Month", values_to = "Change.YoY") %>% 
+                              pivot_wider(names_from = Country, values_from = Change.YoY)
+                                            
+write.csv(africaData2, "africaData2.csv")

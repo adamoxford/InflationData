@@ -3,6 +3,7 @@
 
 library(tidyverse)
 library(dplyr)
+library(lubridate)
 
 #Start by downloading the last 10 yrs of inflation data from here https://data.imf.org/?sk=4FFB52B2-3653-409A-B471-D47B46D904B5, 
 #by month and all indicators. Don't go too far back or data is non-existant. Call it imfData.csv
@@ -40,7 +41,10 @@ africaData <- countryList %>%
                     full_join(kenyaData) %>%
                     arrange(Country)
 
-
 names(africaData) <- sub("^X", "", names(africaData))
+
+dates <- as.character(ym(names(africaData)[-c(1:4)])+months(1)-days(1))
+names(africaData)[-c(1:4)] <- dates
+
 
 write_csv(africaData, "africaInflationData.csv")

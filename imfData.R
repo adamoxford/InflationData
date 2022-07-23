@@ -43,7 +43,8 @@ africaData <- countryList %>%
                     full_join(kenyaData) %>%
                     filter(Geography != "ZAF") %>%
                     union(southAfrica) %>%
-                    arrange(Country)
+                    arrange(Country) %>%
+                    mutate(Indicator.Name = str_remove(Indicator.Name, ", Percentage change, Previous year"))
 
 names(africaData) <- sub("^X", "", names(africaData))
 
@@ -53,9 +54,34 @@ names(africaData)[-c(1:4)] <- dates
 
 write_csv(africaData, "africaInflationData.csv")
 
+##same process for month on month change
+
+africamonthData <- countryList %>%
+  inner_join(countryCodes, by = c("Geography" = "ISO.Code")) %>%
+  inner_join(imfData, by = c("IMF.Code" = "Country.Code")) %>%
+  filter(Attribute == "Value", grepl("Percentage change, Previous period", Indicator.Name)) %>%
+  select(-c("Common.Reference.Period", "X", "Country.Name", "IMF.Code", "Attribute")) %>%
+  mutate(across(starts_with("X"), as.numeric)) %>%
+  mutate(across(starts_with("X"), round, 2)) 
+
+names(africamonthData) <- sub("^X", "", names(africamonthData))
+
+dates <- as.character(ym(names(africamonthData)[-c(1:4)])+months(1)-days(1))
+names(africamonthData)[-c(1:4)] <- dates
+
+
+write_csv(africamonthData, "africaInflationDatabymonth.csv")
+
+##Reshaping for Flourish
 
 africaData2 <- africaData %>% select(-c("Geography")) %>%
                               pivot_longer(cols = starts_with("2"), names_to = "Year.Month", values_to = "Change.YoY") %>% 
                               pivot_wider(names_from = Country, values_from = Change.YoY)
                                             
 write.csv(africaData2, "africaData2.csv")
+
+africamonthData2 <- africamonthData %>% select(-c("Geography")) %>%
+  pivot_longer(cols = starts_with("2"), names_to = "Year.Month", values_to = "Change.YoY") %>% 
+  pivot_wider(names_from = Country, values_from = Change.YoY)
+
+write.csv(africamonthData2, "africaData2bymonth.csv")

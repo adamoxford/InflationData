@@ -62,7 +62,16 @@ africamonthData <- countryList %>%
   filter(Attribute == "Value", grepl("Percentage change, Previous period", Indicator.Name)) %>%
   select(-c("Common.Reference.Period", "X", "Country.Name", "IMF.Code", "Attribute")) %>%
   mutate(across(starts_with("X"), as.numeric)) %>%
+<<<<<<< HEAD
   mutate(across(starts_with("X"), round, 2)) 
+=======
+  mutate(across(starts_with("X"), round, 2)) %>%
+  full_join(kenyaData) %>%
+  filter(Geography != "ZAF") %>%
+  union(southAfrica) %>%
+  arrange(Country) %>%
+  mutate(Indicator.Name = str_remove(Indicator.Name, ", Percentage change, Previous period"))
+>>>>>>> 1f278a5eb903dfb2c03ad3c038b76fca95a29401
 
 names(africamonthData) <- sub("^X", "", names(africamonthData))
 

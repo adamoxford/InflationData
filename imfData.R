@@ -92,3 +92,9 @@ africamonthData2 <- africamonthData %>% select(-c("Geography")) %>%
   pivot_wider(names_from = Country, values_from = Change.YoY)
 
 write.csv(africamonthData2, "africaData2bymonth.csv")
+
+africaData3 <- africaData2 <- africaData %>% select(-c("Geography")) %>%
+  pivot_longer(cols = starts_with("2"), names_to = "Year.Month", values_to = "Change.YoY") %>% 
+  pivot_wider(names_from = Indicator.Name, values_from = Change.YoY)
+
+write.csv(africaData3, "africaData3.csv")

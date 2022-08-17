@@ -30,7 +30,7 @@ ethiopiaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJO
 countryList <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vR6_bOjxa_F2qgn5eOGo6gpOLXKY9WcsebCvTPD4xVVs2yIL0ABtQx3QKhxfaftTI4jVj85mwaQQ0_K/pub?gid=0&single=true&output=csv")
 write_csv(countryList, "countryList.csv")
 
-#Get the ISO to IMF code convertor documnet
+#Get the ISO to IMF code convertor document
 countryCodes <- read.csv("tabula-co.csv")
 
 
@@ -96,6 +96,6 @@ write.csv(africamonthData2, "africaData2bymonth.csv")
 africaData3 <- africaData2 <- africaData %>% select(-c("Indicator.Name")) %>%
   pivot_longer(cols = starts_with("2"), names_to = "Year.Month", values_to = "Change.YoY") %>% 
   pivot_wider(names_from = Indicator.Code, values_from = Change.YoY) %>%
-  rename(date = Year.Month)
+  rename(date = Year.Month, iso_code = Geography)
 
 write.csv(africaData3, "africaData3.csv", row.names = FALSE)

@@ -96,7 +96,7 @@ africamonthData2 <- africamonthData %>% select(-c("Geography")) %>%
 
 write.csv(africamonthData2, "africaData2bymonth.csv")
 
-africaData3 <- africaData2 <- africaData %>% select(-c("Indicator.Name")) %>%
+africaData3 <- africaData %>% select(-c("Indicator.Name")) %>%
   pivot_longer(cols = starts_with("2"), names_to = "Year.Month", values_to = "Change.YoY") %>% 
   pivot_wider(names_from = Indicator.Code, values_from = Change.YoY) %>%
   rename(date = Year.Month, iso_code = Geography)

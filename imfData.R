@@ -26,6 +26,8 @@ ugandaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5
 
 ethiopiaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=1693981224&single=true&output=csv")
 
+tanzaniaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=1099881620&single=true&output=csv")
+
 #get the latest country data from Google Sheet
 countryList <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vR6_bOjxa_F2qgn5eOGo6gpOLXKY9WcsebCvTPD4xVVs2yIL0ABtQx3QKhxfaftTI4jVj85mwaQQ0_K/pub?gid=0&single=true&output=csv")
 write_csv(countryList, "countryList.csv")
@@ -44,10 +46,11 @@ africaData <- countryList %>%
                     mutate(across(starts_with("X"), as.numeric)) %>%
                     mutate(across(starts_with("X"), round, 2)) %>%
                     full_join(kenyaData) %>%
-                    filter(Geography != "ZAF" & Geography != "UGA" & Geography != "ETH") %>%
+                    filter(Geography != "ZAF" & Geography != "UGA" & Geography != "ETH" & Geography != "TZA") %>%
                     full_join(southAfrica) %>%
                     full_join(ugandaData) %>%  
                     full_join(ethiopiaData) %>%
+                    full_join(tanzaniaData) %>%
                     arrange(Country) %>%
                     mutate(Indicator.Name = str_remove(Indicator.Name, ", Percentage change, Previous year"))
 

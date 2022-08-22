@@ -28,6 +28,9 @@ ethiopiaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJO
 
 tanzaniaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=1099881620&single=true&output=csv")
 
+#adding food inflation for Ghana, others are available but not scraped yet
+ghanaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=982017806&single=true&output=csv")
+
 #get the latest country data from Google Sheet
 countryList <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vR6_bOjxa_F2qgn5eOGo6gpOLXKY9WcsebCvTPD4xVVs2yIL0ABtQx3QKhxfaftTI4jVj85mwaQQ0_K/pub?gid=0&single=true&output=csv")
 write_csv(countryList, "countryList.csv")
@@ -42,7 +45,8 @@ africaData <- countryList %>%
                     inner_join(countryCodes, by = c("Geography" = "ISO.Code")) %>%
                     inner_join(imfData, by = c("IMF.Code" = "Country.Code")) %>%
                     filter(Attribute == "Value", grepl("Percentage change, Previous year", Indicator.Name)) %>%
-                    select(-c("Common.Reference.Period", "X", "Country.Name", "IMF.Code", "Attribute")) %>%
+                    # select(-c("Common.Reference.Period", "X", "Country.Name", "IMF.Code", "Attribute")) %>%
+                    select(-c("Common.Reference.Period", "Country.Name", "IMF.Code", "Attribute")) %>%
                     mutate(across(starts_with("X"), as.numeric)) %>%
                     mutate(across(starts_with("X"), round, 2)) %>%
                     full_join(kenyaData) %>%
@@ -51,6 +55,7 @@ africaData <- countryList %>%
                     full_join(ugandaData) %>%  
                     full_join(ethiopiaData) %>%
                     full_join(tanzaniaData) %>%
+                    full_join(ghanaData) %>%
                     arrange(Country) %>%
                     mutate(Indicator.Name = str_remove(Indicator.Name, ", Percentage change, Previous year"))
 
@@ -68,7 +73,7 @@ africamonthData <- countryList %>%
   inner_join(countryCodes, by = c("Geography" = "ISO.Code")) %>%
   inner_join(imfData, by = c("IMF.Code" = "Country.Code")) %>%
   filter(Attribute == "Value", grepl("Percentage change, Previous period", Indicator.Name)) %>%
-  select(-c("Common.Reference.Period", "X", "Country.Name", "IMF.Code", "Attribute")) %>%
+  select(-c("Common.Reference.Period", "Country.Name", "IMF.Code", "Attribute")) %>%
   mutate(across(starts_with("X"), as.numeric)) %>%
   mutate(across(starts_with("X"), round, 2)) %>%
   arrange(Country) %>%

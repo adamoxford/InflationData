@@ -45,8 +45,8 @@ africaData <- countryList %>%
                     inner_join(countryCodes, by = c("Geography" = "ISO.Code")) %>%
                     inner_join(imfData, by = c("IMF.Code" = "Country.Code")) %>%
                     filter(Attribute == "Value", grepl("Percentage change, Previous year", Indicator.Name)) %>%
-                    # select(-c("Common.Reference.Period", "X", "Country.Name", "IMF.Code", "Attribute")) %>%
-                    select(-c("Common.Reference.Period", "Country.Name", "IMF.Code", "Attribute")) %>%
+                    select(-c("Common.Reference.Period", "X", "Country.Name", "IMF.Code", "Attribute")) %>%
+                   # select(-c("Common.Reference.Period", "Country.Name", "IMF.Code", "Attribute")) %>%
                     mutate(across(starts_with("X"), as.numeric)) %>%
                     mutate(across(starts_with("X"), round, 2)) %>%
                     full_join(kenyaData) %>%
@@ -73,7 +73,7 @@ africamonthData <- countryList %>%
   inner_join(countryCodes, by = c("Geography" = "ISO.Code")) %>%
   inner_join(imfData, by = c("IMF.Code" = "Country.Code")) %>%
   filter(Attribute == "Value", grepl("Percentage change, Previous period", Indicator.Name)) %>%
-  select(-c("Common.Reference.Period", "Country.Name", "IMF.Code", "Attribute")) %>%
+  select(-c("Common.Reference.Period", "X", "Country.Name", "IMF.Code", "Attribute")) %>%
   mutate(across(starts_with("X"), as.numeric)) %>%
   mutate(across(starts_with("X"), round, 2)) %>%
   arrange(Country) %>%

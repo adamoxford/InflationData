@@ -49,8 +49,8 @@ africaData <- countryList %>%
                    # select(-c("Common.Reference.Period", "Country.Name", "IMF.Code", "Attribute")) %>%
                     mutate(across(starts_with("X"), as.numeric)) %>%
                     mutate(across(starts_with("X"), round, 2)) %>%
+                    filter(Geography != "ZAF" & Geography != "UGA" & Geography != "ETH" & Geography != "TZA" & Geography != "KEN") %>%
                     full_join(kenyaData) %>%
-                    filter(Geography != "ZAF" & Geography != "UGA" & Geography != "ETH" & Geography != "TZA") %>%
                     full_join(southAfrica) %>%
                     full_join(ugandaData) %>%  
                     full_join(ethiopiaData) %>%

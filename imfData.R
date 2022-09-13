@@ -16,20 +16,20 @@ imfData <- read.csv("imfData.csv")
 #Kenya's data is a manual PDF scrape at the moment, updated on a Google Sheet in the ADH drive
 
 kenyaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=0&single=true&output=csv")
-codeList <- read.csv("codeList.csv")
+#codeList <- read.csv("codeList.csv")
 
-kenyaData <- left_join(kenyaData, codeList, by = "Indicator.Name")
+# kenyaData <- left_join(kenyaData, codeList, by = "Indicator.Name")
 
 southAfrica <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=1551906459&single=true&output=csv")
 
-ugandaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=1607745865&single=true&output=csv")
+#ugandaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=1607745865&single=true&output=csv")
 
-ethiopiaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=1693981224&single=true&output=csv")
+#ethiopiaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=1693981224&single=true&output=csv")
 
-tanzaniaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=1099881620&single=true&output=csv")
+#tanzaniaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=1099881620&single=true&output=csv")
 
 #adding food inflation for Ghana, others are available but not scraped yet
-ghanaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=982017806&single=true&output=csv")
+#ghanaData <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRuwJON5dg_MZ3ycdgaRFcrVnLBZjnRMGARcPnFZonvE1ug2vnY0cM3Hgh8zE_V9In2HQs9hFEAU6Ni/pub?gid=982017806&single=true&output=csv")
 
 #get the latest country data from Google Sheet
 countryList <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vR6_bOjxa_F2qgn5eOGo6gpOLXKY9WcsebCvTPD4xVVs2yIL0ABtQx3QKhxfaftTI4jVj85mwaQQ0_K/pub?gid=0&single=true&output=csv")
@@ -49,7 +49,7 @@ africaData <- countryList %>%
                    # select(-c("Common.Reference.Period", "Country.Name", "IMF.Code", "Attribute")) %>%
                     mutate(across(starts_with("X"), as.numeric)) %>%
                     mutate(across(starts_with("X"), round, 2)) %>%
-                    filter(Geography != "ZAF" & Geography != "UGA" & Geography != "ETH" & Geography != "TZA" & Geography != "KEN") %>%
+                    filter(Geography != "ZAF" & Geography != "UGA" & Geography != "ETH" & Geography != "TZA" & Geography != "KEN" & Geography != "DZA") %>%
                     full_join(kenyaData) %>%
                     full_join(southAfrica) %>%
                     full_join(ugandaData) %>%  

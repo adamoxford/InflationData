@@ -1,0 +1,60 @@
+Region/Country,Geography,Name,Link,Updates usually release around,Notes,Social media,Breakdown by COICOP category?
+Global,Global,World Bank Data Portal,https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG,NA,Annual updates only,NA,N
+Africa,Global,Africa Development Bank/Open Data for Africa,opendataforafrica.org,NA,Not  regularly updated,NA,NA
+Global,Global,International Monetary Fund,https://data.imf.org/?sk=4FFB52B2-3653-409A-B471-D47B46D904B5,NA,Data doesn't exactly match national level reports,NA,Y
+Southern Africa,Global,SADC Harmonised CPI Newsletter,https://www.sadc.int/information-services/sadc-statistics,NA,"Website not up to date, but recent newsletters are available on demand",NA,Y
+Southern and Eastern Africa,Global,COMESA Harmonsied CPI data,https://drive.google.com/drive/folders/1OgqNm6gFKMYxeelNaBQ2KQ9sbG6jS23H,NA,Not regularly updated,NA,Y
+Algeria,DZA,Office National des Statistiques,https://www.ons.dz/spip.php?rubrique124,NA,Updated late in month?,NA,NA
+Angola,AGO,Instituto Nacional de Estatistica,https://www.ine.gov.ao/,NA,Very user friendly site,NA,Not sure
+Benin,BEN,Les statistiques au service de la nation,https://instad.bj/,NA,Monthly press release,NA,y
+Botswana,BWA,Bank of Botswana,https://www.bankofbotswana.bw/botswana-financial-statistics,NA,Monthly Spreadsheet (Look for section 2),NA,Y
+Burkina Faso,BFA,Institut National de la Statistique et de la Demographie,http://www.insd.bf/index.php/publications?id=45,NA,Monthly PDF release,NA,Y
+Burundi,BDI,Institut de Statistiques et d'Etudes Economiques du Burundi,https://www.isteebu.bi/indices-des-prix-a-la-consommation/,NA,Monthly PDF release,NA,Y
+Cameroon,CMR,Institut National de la Statistique,https://ins-cameroun.cm/en/type-de-statistique/statistiques-conjoncturelles/consommation/,NA,PDF release could be quarterly?,NA,Y
+Cape Verde,CPV,Instituto Nacional de Estatistica,https://ine.cv/ipc/,NA,Monthly PDF release,NA,Y
+Central African Republic,CAF,NA,NA,NA,NA,NA,NA
+Chad,TCD,Institut National de la Statistique du Tchad,https://www.inseed.td/,Various,Latest brief is in news box at bottom of home page,NA,N
+Comoros,COM,Banque Centrale des Comores,http://www.banque-comores.km/,NA,NA,NA,NA
+Congo,COG,NA,NA,NA,NA,NA,NA
+Democratic Republic of Congo,COD,Banque Centrale du Congo,www.bcc.cd,NA,Monthly PDF,NA,Y
+Djibouti,DJI,Direction de la Statistique et des Etudes Demographiques,http://www.ministere-finances.dj,NA,Doesn't seem to be published regularly,NA,NA
+Egypt,EGY,CAPMAS,https://www.capmas.gov.eg/,NA,NA,NA,NA
+Equatorial Guinea,GNQ,NA,NA,NA,NA,NA,NA
+Eritrea,ERI,NA,NA,NA,NA,NA,NA
+eSwatini,SWZ,Central Bank,https://www.centralbank.org.sz/,NA,Not included in monthly PDF every month,NA,NA
+Ethiopia,ETH,Ethiopia Statistics Service,https://www.statsethiopia.gov.et/our-survey-reports/,3rd of month,Monthly PDF report,https://www.statsethiopia.gov.et/our-survey-reports/,Y
+Gabon,GAB,Direction Générale des Statistiques du Gabon,https://statgabon.ga/home/,NA,Monthly PDF report (Website infected with pharmaspam) could be added in batches quarterly,NA,Y
+Gambia,GMB,The Gambia Bureau of Statistics,https://www.gbosdata.org/downloads,NA,Monthly XLS sheet,NA,Y
+Ghana,GHA,Ghana Statistical Service,https://statsghana.gov.gh/nationalaccount_macros.php?Stats=MTE2MTIyMjQ5Ni41NjY=/webstats/7163p83s71,NA,Monthly bulletin,NA,Y
+Guinea,GIN,Institut National de la Statistique,https://www.stat-guinee.org/,NA,Monthly PDF,NA,Y
+Guinea-Bissau,GNB,NA,NA,NA,NA,NA,NA
+Ivory Coast,CIV,Institut National de la Statistique,http://www.ins.ci/,NA,Monthly PDF,NA,Y
+Kenya,KEN,Kenya National Bureau of Statistics,https://www.knbs.or.ke/news-and-events/,1st of month,"Monthly PDF, potential malware on site?",https://twitter.com/KNBStats,Y
+Lesotho,LSO,Lesotho Bureau of Statistics,https://www.bos.gov.ls/Publications.htm,NA,Monthly PDF,NA,Y
+Liberia,LBR,Liberia Central Bank,https://www.cbl.org.lr/publications/document-type/liberia-financial-statistical-reports,NA,NA,NA,NA
+Libya,LBY,Bureau of Statistics and Census Libya,http://bsc.ly/?P=5&sec_Id=11&dep_Id=4#178,NA,Monthly RAR file,NA,NA
+Madagascar,MDG,INSTAT Madagascar,http://instat.mg/,NA,Monthly XLSX sheet,NA,Y
+Malawi,MWI,National Statistical Office of Malawi,http://www.nsomalawi.mw/index.php?option=com_content&view=article&id=186&Itemid=37,NA,Monthly XLSX update,NA,Y
+Mali,MLI,Institut National de la Statistique Mali,https://www.instat-mali.org/fr/publications?category=22,NA,Annual PDF,NA,Y
+Mauritania,MRT,ANSADE,https://ansade.mr/fr/publications/?row=INPC,NA,Monthly PDF,NA,Y
+Mauritius,MUS,Statistics Mauritius,https://statsmauritius.govmu.org/Pages/Statistics/By_Subject/CPI/SB_CPI.aspx,NA,Monthly PDF,NA,Y
+Morocco,MAR,Haut-Commissariat au Plan,https://applications-web.hcp.ma/sip/,NA,Interactive & Press release,NA,Y
+Mozambique,MOZ,Insituto Nacional de Estatistica,http://www.ine.gov.mz/estatisticas/estatisticas-economicas/indice-de-preco-no-consumidor/notas-de-imprensa/mocambique,NA,Monthly PDF,http://twitter.com/INE_mz,Y
+Namibia,"NAM",Namibia Statistics Agency,https://nsa.org.na/page/publications/,NA,Monthly XLSX sheet (Price Statistics),NA,Y
+Niger,NER,Institut National de la Statistique du Niger,https://www.stat-niger.org/?page_id=1558,NA,Monthly releases,NA,Y
+Nigeria,NGA,Central Bank of Nigeria,https://www.cbn.gov.ng/rates/inflrates.asp,NA,Interactive and XLSX update,NA,Y
+Rwanda,RWA,National Institute of Statistics of Rwanda,https://www.statistics.gov.rw/publication/consumer-price-index,NA,Monthly PDF and XLSX updates,NA,Y
+Sao Tome and Principe,STP,Banco Central S Tome e Principe,https://bcstp.st/Banco-Central?x=wOgqPO8BlRrdHdPOd1%2BEuA==&&z=MQ9pUZLiR%2BYScEF43ktfRA==,NA,Monthly XLSX update,NA,N
+Senegal,SEN,Agence Nationale de la Statistique et de la Demographie,http://www.ansd.sn/index.php?option=com_ansd&view=titrepublication&id=61,NA,Interactive and PDF update,NA,N
+Seychelles,SYC,National Bureau of Statistics,https://www.nbs.gov.sc/downloads/economic-statistics/consumer-price-index,NA,Monthly PDF updates,NA,Y
+Sierra Leone,SLE,Statistics Sierre Leone,https://www.statistics.sl/index.php/cpi.html,NA,Monthly PDF updates,NA,Y
+Somalia,SOM,Hay’adda Istaatistikada Qaranka Soomaaliyaa,https://www.nbs.gov.so/cpi-graph,NA,Monthly interactive update,NA,Y
+South Africa,ZAF,Statistics South Africa,https://www.statssa.gov.za/?cat=33,20th of month,Comprehensive monthly release in PDF format,https://twitter.com/StatsSA,Y
+South Sudan,SSD,NA,NA,NA,NA,NA,NA
+Sudan,SDN,Central Bank of Sudan,https://cbos.gov.sd/en/periodicals-publications?field_publication_type_tid_i18n=44,NA,Quarterly PDF update,NA,N
+Tanzania,TZA,National Bureau of Statistics,https://www.nbs.go.tz/index.php/en/consumer-price-index-cpi,Around 20th,Monthly PDF update,NA,Y
+Togo,TGO,Institut National de la Statistique et des Etudes Economiqes et Demographiques,https://inseed.tg/inflation-prix/,NA,Monthly PDF update,NA,Y
+Tunisia,TUN,Statistiques Tunisie,http://www.ins.tn/en/statistiques/90,NA,Monthly interactive and downloads,NA,Y
+Uganda,UGA,UBOS,https://www.ubos.org/explore-statistics/30/,Last day of month,Monthly XLSX,https://twitter.com/StatisticsUg,Y
+Zambia,ZMB,Zamstats,https://www.zamstats.gov.zm/publications/,NA,Website down - but Facebook notifications are published,"https://twitter.com/mofnpzambia, https://www.facebook.com/zambiafinanceministry",N
+Zimbabwe,ZWE,ZIMSTAT,https://www.zimstat.co.zw/,NA,"Figures are on homepage, not apparent where downloads are",NA,NA

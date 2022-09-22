@@ -1,9 +1,11 @@
 #install.packages("tidyverse")
 #install.packages("dplyr")
+#install.packages("ckanr")
 
 library(tidyverse)
 library(dplyr)
 library(lubridate)
+library(ckanr)
 
 #Start by downloading the last 10 yrs of inflation data from here https://data.imf.org/?sk=4FFB52B2-3653-409A-B471-D47B46D904B5, 
 #by month and all indicators. Don't go too far back or data is non-existant. Call it imfData.csv
@@ -13,6 +15,8 @@ library(lubridate)
 
 imfData <- read.csv("imfData.csv")
 
+sources <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vR6_bOjxa_F2qgn5eOGo6gpOLXKY9WcsebCvTPD4xVVs2yIL0ABtQx3QKhxfaftTI4jVj85mwaQQ0_K/pub?gid=0&single=true&output=csv")
+write_csv(sources, "inflationSources.csv")
 
 #One CSV for Kenya and Ghana
 
@@ -97,3 +101,14 @@ africaData3 <- africaData %>% select(-c("Indicator.Name")) %>%
   rename(date = Year.Month, iso_code = Geography)
 
 write.csv(africaData3, "africaData3.csv", row.names = FALSE)
+
+
+##update CKAN - get settings
+ckanr_setup(url = "https://ckan.africadatahub.org", key = Sys.getenv("CKANKEY"))
+
+#Update the CSVs
+
+resource_update(id = "15b5b9eb-e68e-461c-8f8e-7bd0c69dcd14", path = "africaInflationData.csv")
+resource_update(id = "2a52f5b3-2ccd-4f3e-9b6b-e7dd7e9cfad5", path = "africaInflationDatabymonth.csv")
+resource_update(id = "7bcead8b-42c2-422d-b23a-549481cbe4bd", path = "africaData3.csv")
+resource_update(id = "04415771-ba74-43d3-866c-b9dc9b8ea4d0", path = "inflationSources.csv")

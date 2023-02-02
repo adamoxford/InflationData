@@ -1,0 +1,54 @@
+Geography,Country,Indicator.Name,Indicator.Code,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022
+DZA,Algeria,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,3.91,4.52,8.89,3.25,2.92,4.78,6.4,5.59,4.27,1.95,2.42,7.23,NA
+AGO,Angola,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,14.47,13.48,10.28,8.78,7.28,9.35,30.7,29.84,19.63,17.08,22.27,25.75,NA
+BEN,Benin,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,2.21,2.7,6.74,0.43,-0.55,0.22,-0.79,1.77,0.64,-0.71,3.02,1.73,NA
+BWA,Botswana,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,8.46,7.54,5.88,4.4,3.06,2.81,3.31,3.24,2.77,1.89,7.24,11.59
+BFA,Burkina Faso,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,2.76,3.82,0.53,-0.26,0.72,0.44,1.48,1.96,-3.23,1.88,3.65,14.29
+BDI,Burundi,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,6.49,9.59,18.16,7.94,4.41,5.54,5.56,16.05,-2.81,-0.69,7.32,8.4,NA
+CPV,Cabo Verde,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,2.08,4.47,2.54,1.51,-0.24,0.13,-1.41,0.78,1.26,1.11,0.61,1.86,NA
+CMR,Cameroon,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,2.94,2.74,2.06,1.83,2.69,0.86,0.64,1.07,2.45,2.44,2.27,NA
+CAF,Central African Republic,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,1.49,1.19,5.48,6.99,14.9,1.4,4.95,4.18,1.61,2.69,1.71,4.26,NA
+TCD,Chad,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,2.03,7.52,0.22,1.68,4.38,-0.79,-1.54,4.27,-0.97,4.46,-0.77,NA
+COM,Comoros,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,1.84,6.31,-4.29,NA,NA,NA,NA,NA,NA,NA,NA,NA
+CIV,Côte d'Ivoire,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,1.23,4.91,1.3,2.58,0.45,1.25,0.72,0.69,0.36,-1.11,2.43,4.09,5.28
+COD,Democratic Republic of the Congo,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,NA,NA,0.81,1.24,0.74,2.89,NA,NA,NA,NA,NA,NA
+DJI,Djibouti,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,5.07,3.73,2.71,1.34,-0.85,2.74,0.57,0.15,3.32,1.78,NA,NA
+EGY,Egypt,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,10.06,7.11,9.47,10.07,10.37,13.81,29.51,14.4,9.15,5.04,5.21,13.9
+GNQ,Equatorial Guinea,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,4.81,3.66,2.95,4.31,1.68,1.41,0.75,1.35,1.24,4.77,NA,NA
+SWZ,Eswatini,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,4.51,6.11,8.94,5.62,5.68,4.95,7.85,6.22,4.82,2.6,NA,NA,NA
+ETH,Ethiopia,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,8.15,33.25,23.6,7.46,6.89,9.57,6.63,10.69,13.83,15.81,20.36,26.84,NA
+GAB,Gabon,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,1.26,2.65,0.51,4.69,-0.34,2.11,2.65,4.75,2.46,1.35,1.09,NA
+GHA,Ghana,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,10.73,8.73,11.19,11.67,15.49,17.15,17.45,12.37,7.81,7.14,9.89,9.97,NA
+GIN,Guinea,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,15.05,21.32,15.23,11.89,6.15,11.78,8.17,8.91,9.83,9.47,10.6,12.6,NA
+GNB,Guinea-Bissau,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,5.05,2.13,1.21,-1.51,1.48,1.5,1.69,0.38,0.25,1.14,2.24,NA
+KEN,Kenya,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,14.02,9.38,5.72,6.88,6.58,6.3,8.01,4.69,5.24,5.4,6.11,NA
+LSO,Lesotho,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,3.46,5.04,6.05,4.87,5.37,3.22,6.6,4.45,4.75,5.19,4.98,6.05,8.27
+LBR,Liberia,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,7.29,8.49,6.83,7.58,9.86,7.75,8.83,12.42,23.56,NA,NA,NA,NA
+LBY,Libya,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,15.52,6.06,2.61,NA,NA,NA,NA,NA,NA,NA,NA,NA
+MDG,Madagascar,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,9.25,9.48,5.71,5.83,6.08,7.4,6.04,8.61,8.59,5.61,4.2,5.81,NA
+MWI,Malawi,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,7.62,21.27,27.28,23.79,21.87,21.71,11.54,12.42,9.37,8.63,NA,NA
+MLI,Mali,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,2.96,5.32,-0.61,0.88,1.45,-1.8,1.76,0.3,-1.66,0.44,3.93,NA
+MRT,Mauritania,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,5.69,4.9,4.13,3.53,3.24,1.49,2.28,3.05,2.3,2.39,3.57,NA
+MUS,Mauritius,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,2.93,6.52,3.85,3.54,3.22,1.29,0.98,3.67,3.22,0.41,2.58,4.03,10.77
+MAR,Morocco,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,0.99,0.91,1.29,1.88,0.44,1.56,1.64,0.75,1.8,0.3,0.71,1.4,NA
+MOZ,Mozambique,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,12.43,11.17,2.6,4.26,2.56,3.55,17.42,15.11,3.91,2.78,3.14,5.69,NA
+NAM,Namibia,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,4.87,5.01,6.72,5.6,5.35,3.39,6.73,6.15,4.29,3.72,2.21,3.62,6.08
+NER,Niger,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,2.94,0.46,2.3,-0.93,-0.58,1.65,2.8,2.97,-2.49,2.9,3.84,4.23
+NGA,Nigeria,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,13.74,10.83,12.22,8.5,8.05,9.01,15.7,16.5,12.1,11.4,13.25,16.95,NA
+COG,Republic of Congo,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,0.39,1.76,5.01,4.63,0.91,3.17,3.19,0.45,1.15,2.21,1.8,1.72,NA
+RWA,Rwanda,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,-0.25,3.08,10.27,5.92,2.35,2.53,7.17,8.28,-0.31,3.35,9.85,-0.39,NA
+STP,São Tomé and Príncipe,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,14.33,10.64,8.11,7,5.25,5.43,5.7,7.86,NA,NA,NA,NA
+SEN,Senegal,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,1.23,3.4,1.42,0.71,-1.09,0.14,0.84,1.32,0.46,1.76,2.55,NA,NA
+SYC,Seychelles,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,-2.4,2.56,7.11,4.34,1.39,4.04,-1.02,2.86,3.7,2.07,8.28,NA,NA
+SLE,Sierra Leone,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,7.19,6.79,6.59,5.52,4.64,6.69,10.89,18.22,16.03,14.8,13.45,11.87,NA
+SOM,Somalia,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,NA,NA,NA,NA,NA,0.02,3.96,4.27,4.71,4.11,4.62,6.78
+ZAF,South Africa,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,4.09,5,5.72,5.78,6.13,4.54,6.57,5.18,4.52,4.12,3.21,4.61,7.04
+SSD,South Sudan,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,1.17,46.85,45.53,-0.06,1.67,52.77,380,187.85,83.5,87.24,29.68,10.52,NA
+SDN,Sudan,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,12.98,18.1,35.56,36.52,36.91,16.91,17.75,32.35,63.29,50.99,150.32,382.82,NA
+TZA,Tanzania,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,12.69,16,7.87,6.13,5.59,5.17,5.32,3.49,3.46,3.29,3.69,NA
+GMB,The Gambia,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,5.05,4.8,4.25,5.7,5.95,6.81,7.23,8.03,6.52,7.12,5.93,7.37,11.51
+TGO,Togo,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,1.45,3.56,2.58,1.83,0.19,2.58,1.29,-0.98,0.93,0.69,1.83,NA,NA
+TUN,Tunisia,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,3.34,3.24,4.61,5.32,4.63,4.44,3.63,5.31,7.31,6.72,5.63,5.71,NA
+UGA,Uganda,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,16.56,12.68,4.91,3.08,5.59,5.71,5.21,2.62,2.87,3.31,2.2,7.2
+ZMB,Zambia,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,NA,6.43,6.58,6.98,7.81,10.11,17.87,6.58,7.49,9.15,15.73,22.02,10.99
+ZWE,Zimbabwe,"Consumer Price Index, All items",PCPI_PC_CP_A_PT,3.02,3.47,3.73,1.63,-0.2,-2.43,-1.54,0.89,10.62,255.3,557.2,98.55,NA

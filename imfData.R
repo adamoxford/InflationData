@@ -112,3 +112,26 @@ resource_update(id = "15b5b9eb-e68e-461c-8f8e-7bd0c69dcd14", path = "africaInfla
 resource_update(id = "2a52f5b3-2ccd-4f3e-9b6b-e7dd7e9cfad5", path = "africaInflationDatabymonth.csv")
 resource_update(id = "7bcead8b-42c2-422d-b23a-549481cbe4bd", path = "africaData3.csv")
 resource_update(id = "04415771-ba74-43d3-866c-b9dc9b8ea4d0", path = "inflationSources.csv")
+
+
+#Get annual inflation
+
+annualInflation <- read.csv("annualInflation2022.csv")
+
+latestYear <- countryList %>%
+  inner_join(countryCodes, by = c("Geography" = "ISO.Code")) %>%
+  inner_join(annualInflation, by = c("IMF.Code" = "Country.Code")) %>%
+  select(-c("Common.Reference.Period", "Country.Name", "IMF.Code", "Attribute")) %>%
+  # select(-c("Common.Reference.Period", "Country.Name", "IMF.Code", "Attribute")) %>%
+  mutate(across(starts_with("X"), as.numeric)) %>%
+  mutate(across(starts_with("X"), round, 2)) %>%
+  arrange(Country) %>%
+  mutate(Indicator.Name = str_remove(Indicator.Name, ", Percentage change, Previous year"))
+
+names(latestYear) <- sub("^X", "", names(latestYear))
+
+write_csv(latestYear, "inflation2022.csv")
+
+
+dates <- as.character(ym(names(africaData)[-c(1:4)])+months(1)-days(1))
+names(africaData)[-c(1:4)] <- dates
